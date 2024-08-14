@@ -6,6 +6,7 @@
 Import-Module activedirectory
   
 #Store the data from ADUsers.csv in the $ADUsers variable. CSV template needs the following headers-> name, path
+# IMPORTANT: you must create your forest and domain with this fqdn: mylab.local
 $ADOU = Import-csv C:\it\ous.csv
 
 #Loop through each row containing user details in the CSV file
